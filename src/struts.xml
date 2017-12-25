@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="action" namespace="/login" extends="struts-default">
+		<action name="*" method="{1}" class="com.doaio.action.LoginAction" >
+			<result type="redirect" name="{1}">/login/{1}.jsp</result>
+		</action>
+	</package>
+</struts>   

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.doaio.entity.User" table="user">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="username" column="username" />
+		<property name="password" column="password" />
+		<property name="email" column="email" />
+		<property name="is_applied" column="is_applied" /><!-- 是否已激活 -->
+		<property name="is_delete" column="is_delete" /><!-- 是否已删除 -->
+		<property name="is_profile" column="is_profile" /><!-- 个人信息是否完善 -->
+		
+	</class>
+</hibernate-mapping>  
